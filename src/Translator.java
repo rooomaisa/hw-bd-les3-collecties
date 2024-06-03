@@ -11,5 +11,24 @@ public class Translator {
         }
     }
 
-    Translator translator= new Translator(alphabetic, numeric);
+
+    public HashMap<Integer, String> getNumericAlpha() {
+        return numericAlpha;
+    }
+
+    public void setNumericAlpha(HashMap<Integer, String> numericAlpha) {
+        this.numericAlpha = numericAlpha;
+    }
+
+    public String translate(Integer number){
+        return numericAlpha.get(number);
+    }
+
+
+
+
 }
+
+
+
+
